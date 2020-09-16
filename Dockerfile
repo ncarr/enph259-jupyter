@@ -8,7 +8,7 @@ RUN conda install --quiet --yes \
   fix-permissions "${CONDA_DIR}"
 
 
-COPY nbconvert_pdf_report_exporter /tmp/
+COPY nbconvert_pdf_report_exporter /tmp/nbconvert_pdf_report_exporter
 WORKDIR /tmp/nbconvert_pdf_report_exporter
 RUN python setup.py install && \
   rm -rf /tmp/nbconvert_pdf_report_exporter
