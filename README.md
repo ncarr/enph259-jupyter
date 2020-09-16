@@ -6,7 +6,7 @@ Comes preinstalled with Jupyter, the [standard Python science libraries](https:/
 
 You can start a Jupyter environment in your terminal's current directory with the following command ([Docker](https://docker.com) needs to be installed)
 ```sh
-docker run --it -p 8888:8888 -v "$PWD":/home/jovyan ncarr/enph259-jupyter
+docker run --it -p 8888:8888 -v "$PWD":/home/jovyan nicholascarr/enph259-jupyter
 ```
 
 ## NBConvert PDF Report Exporter
