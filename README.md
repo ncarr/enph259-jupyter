@@ -20,7 +20,7 @@ your computer with the following command
 (Note that [Docker](https://docker.com) needs to be installed 
 and that the path to the directory needs replacing)
 ```sh
-docker run --name lab -d --restart always -p 8888:8888 --mount type=bind,source=/path/to/folder/for/notebooks,target=/home/jovyan nicholascarr/enph259-jupyter
+docker run --name lab -d --restart unless-stopped -p 8888:8888 --mount type=bind,source=/path/to/folder/for/notebooks,target=/home/jovyan nicholascarr/enph259-jupyter
 ```
 
 Then you can open `localhost:8888/?token=the token you see in the console` in your browser to get started!
